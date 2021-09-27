@@ -1,0 +1,419 @@
+/* HEIGHT 100% */
+html, body {
+    height: 100%;
+}
+.bloco {
+    min-height: 100%;
+}
+/*BOTAO-WP*/
+#botao-wp {
+    display: none;
+}
+/*COR LOGO*/
+.txt_cor{
+    color: #FF8800;
+}
+.back_cor{
+    background-color: #FF8800;
+}
+/*OPACIDADE PRETA*/
+.escurecer{
+    height: 100%;
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* --------------------- HEADER  ------------------*/
+.logo_text{
+    font-size: 0; 
+    margin: 0;
+}
+.logo_img{
+    width: 120px;
+}
+nav { 
+    background-color: transparent; 
+    box-shadow: none !important;
+     padding-top: 7px; 
+     height: 70px; 
+     width: 100%;
+}
+.navbar-fixed {
+    position: absolute; 
+    height: 94px;
+}
+.navbar-fixed .container {
+    width: 80%;
+}
+nav ul a:hover {
+    color:#FF8800;
+    background-color: transparent;
+}
+/*NAV-COR*/
+.nav-cor {
+    background-color: rgba(0, 0, 1, 0.486); 
+    transition: background linear 0.5s;
+}
+/*------------------ HOME -----------------------*/
+.home {
+    animation: slide 20s infinite 2s; 
+    background-image: url("../img/slider_2.jpg");
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.home h2 {
+    font-size: 2.5rem;  
+    font-weight: 400; 
+    font-family: "Special Elite", monospace;
+}
+.home h2:after{
+    margin: -30px;
+    content: "|";
+    opacity: 1;
+    animation: blinkCursor 600ms infinite normal;
+    width:max-content;
+}
+.home p {
+    font-size: 1.2rem; 
+    line-height: 1.8rem; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home .escurecer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+@keyframes slide{
+    40% {background-image: url("../img/slider_3.jpg");}
+    80% {background-image: url("../img/slider_1.jpg");}
+    100% {background-image: url("../img/slider_2.jpg");}
+}
+
+@keyframes blinkCursor{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+/*---------------------- SERVIÇOS -------------------------*/
+.servicos {
+    background-image: url("../img/textura_site.png");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin-top: -28px; 
+    margin-bottom: -50px;
+}
+.servicos h3 {
+    padding-top: 50px;
+}
+/* TODOS H3 */
+h3::after{
+    content: '';
+    display: block;
+    width: 150px;
+    border-top: 1px solid #ff8800;
+    margin: 15px auto;
+}
+.servicos p {
+    font-size: 1.2rem; 
+    line-height: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.servicos .col p{
+    font-size: 1rem; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.servicos h5, h4 {
+    font-size: 1.8rem; 
+    font-weight: 200;
+}
+.servicos h5 {
+    font-size: 1.8rem; 
+    font-weight: 400;
+}
+.card {
+    padding-bottom: 5px;
+}
+
+/*------------------ FOTO FIXED 1 -----------------------*/
+.photo-fixed{
+    background-image: url("../img/slider_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 50%; 
+    background-attachment: fixed;
+    margin-top: 50px;
+}
+
+.photo-fixed .escurecer{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.photo-fixed h4 {
+    font-size: 1.8rem; 
+     font-weight: 500;
+      font-family: "Special Elite", monospace;
+      text-align: center;
+}
+.photo-fixed p {
+    font-size: 1.2rem; 
+    line-height: 1.5rem; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 0;
+    text-align: justify;
+}
+
+/*------------------ TABELA DE PREÇOS -----------------------*/
+.space_icon{
+    padding-right: 5px;
+}
+.tabela{
+    background-image: url("../img/textura_site.png");
+    margin-top: -30px;
+}
+.tabela .texto{
+    font-size: 25px;
+    font-weight: 550    ;
+    font-family: "Open Sans Condensed", monospace;
+}
+.tabela .font{
+    font-size: 40px;
+    font-weight: 500;
+}
+.tabela .font::after{
+    content: '';
+    display: block;
+    width: 100px;
+    border-top: 2px solid #000;
+    margin: 15px auto;
+    margin-bottom: 15px;
+}
+.tabela .font_blog::after{
+    content: '';
+    display: block;
+    width: 100px;
+    border-top: 2px solid #000;
+    margin: 15px auto;
+    margin-bottom: 15px;
+}
+.tabela .font_ecommerce::after{
+    content: '';
+    display: block;
+    width: 250px;
+    border-top: 2px solid #000;
+    margin: 15px auto;
+    margin-bottom: 15px;
+}
+.borda_ecommerce, .borda_site, .borda_blog{
+    background-image: url("../img/textura_prices.png");
+    width: 100%;
+}
+.tabela h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+.tabela .container{
+    width: 95%;
+    padding-top: 40px;
+}
+/*------------------ SOBRE NÓS -----------------------*/
+.sobre {
+    background-image: url("../img/textura_site.png");
+     margin-top: -30px;
+}
+.sobre h3::after{
+    width: 100px;
+}
+.sobre p {
+    font-size: 0.9rem; 
+    font-family: Arial,
+     Helvetica, sans-serif;
+      color: white;
+}
+.sobre h4 {
+    font-size: 1.5rem;
+     font-weight: 400; 
+     color: white;
+}
+.sobre h5 {
+    font-size: 1.1rem; 
+    font-weight: 200;
+}
+.sobre .tam-img{
+    width: 150px;
+    margin: 0;
+}
+.about {
+    background-image: url("../img/back_sobre.jpg");
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.aboutUs {
+    height: 50%;
+    padding-top: 20px; 
+    padding-bottom: 35px;
+}
+.aboutUs p {
+    color: black; 
+    font-size: 1.2rem; 
+    font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+}
+.aboutUs h4 {
+    font-size: 2rem;
+     font-weight: 400;
+      font-family: "Special Elite", monospace; 
+      color: black;
+}
+.about .container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+[data-anime]{
+    opacity: 0;
+    transition: .8s;
+}
+[data-anime = "right"]{
+    transform: translate3d(10px,0,0);
+}
+[data-anime = "left"]{
+    transform: translate3d(-10px,0,0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}   
+
+/*------------------ CONTATO -----------------------*/
+.contato {
+    background-image: url("../img/textura_site.png");
+     margin-top: -27px;
+      padding-top: 20px;
+}
+.contato h3::after{
+    width: 75px;
+}
+.contato h4{
+    margin-top: 0px;
+}
+.back_contato {
+    background-image: url("../img/textura_contato.png");
+}
+.back_contato2{
+    background-image: url("../img/textura_contato.png");
+    height: auto !important;
+}
+.subir {
+    margin-bottom: 25px;
+}
+.contatos {
+    font-size: 1.8rem; 
+    font-weight: 400;
+}
+.titulo {
+    font-size: 2.2rem;
+     font-weight: 600;
+}
+.paddingTop {
+    padding-top: 25px;
+}
+.margin-right {
+    margin-right: 15px;
+}
+.confirmar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: white;
+    display: none;
+    background-color: rgb(10, 167, 7);
+    font-weight: 800;
+}
+
+/*------------------ RODAPÉ -----------------------*/
+.back_footer{
+    background-image: url("../img/slider_3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100px;
+    margin-top: -20px;
+}
+.direitos{
+    padding-bottom: 3px;
+}
+.rodape_logo, .rodape_link{
+    padding-top: 10px;
+}
+/* --------------- AJUSTES DE RESPONSIVIDADE -------------*/
+@media only screen and (min-width: 360px) {
+    /* AJUSTE DO TEXTO */
+    .photo-fixed .container {
+        width: 90%; 
+        height: 100%;
+    }
+    .text-mobile {
+        font-size: 1rem;
+        margin-top: -10px;
+    }
+    .contatos {
+        font-size: 1.4rem; 
+        font-weight: 400;
+    }
+}
+
+/* Ajuste para celulares com width pequeno*/
+@media only screen and (max-width: 400px) {
+    .ajuste-btn{
+        height: 55px;
+        width: 120px;
+        padding: 0;
+    }
+    i.left {
+        float: left;
+        margin-right: -10px;
+    }
+    .home h2 {
+        font-size: 2rem;  
+        font-weight: 400; 
+        font-family: "Special Elite", monospace;
+      
+    }
+    .home p {
+        font-size: 1.2rem; 
+        line-height: 1.5rem; 
+        font-family: Arial, Helvetica, sans-serif;
+}
+    [data-anime = "right"]{
+        transform: translate3d(5px,0,0);
+    }
+    [data-anime = "left"]{
+        transform: translate3d(-5px,0,0);
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .photo-fixed .container {width: 50%; height: 95%;}
+}
+
+@media only screen and (min-width: 993px) {
+    .back_contato {min-height: 616.5px;}
+    .photo-fixed .container {width: 40%; height: 90%;}
+    .contato .container {width: 90%;}
+}
+
+
+
+
+
+
